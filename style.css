@@ -283,6 +283,7 @@ section a {
   border: none;
   z-index: 30px;
   transition: all 0.25s;
+  display: none;
 }
 
 .hamburger-top,
@@ -306,6 +307,18 @@ section a {
   transform: translateY(14px);
 }
 
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 @media(max-width :960px) {
   .text-xl {
     font-size: 30px;
@@ -321,6 +334,10 @@ section a {
 }
 
 @media(max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .grid-col-2 {
     grid-template-columns: 1fr;
   }
