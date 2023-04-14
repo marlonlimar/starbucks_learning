@@ -1,4 +1,4 @@
 # starbucks_learning
-Just for studying. The website is also responsive to mobile.
+## Just for studying. The website is also responsive to mobile.
 
 ![Screenshot](print.png)
